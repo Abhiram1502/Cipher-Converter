@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipher Converter</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <h2 class="heading1">Text to Cipher Code Converter</h2>
+    <div class="container">
+        <div class="alphabets">
+            <div class="normalAlph">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</div>
+            <div class="shiftedAlph" id="shiftedAlph">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</div>
+        </div>
+        <div class="shift-section">
+            <label>Shift :</label>
+            <input type="range" min="0" max="25" value="0" id="shiftRange" oninput="updateShift()" >
+            <span id="shiftValue">0</span>
+        </div>
+        <div class="text">
+            <div class="input-section">
+                <textarea id="inputText" class="text-box" placeholder="Enter text here..."></textarea>
+                <h1 class="arrow">&rarr;</h1>
+            </div>
+            <div class="output-section">
+                <textarea id="outputText" class="text-box" placeholder="Cipher code will appear here...."></textarea>
+            </div>
+        </div>
+        <div class="buttons">
+            <button onclick="convert()" class="button1">Convert to Cipher</button>
+            <button onclick="copyText()" class="button1">Copy to clipboard</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
