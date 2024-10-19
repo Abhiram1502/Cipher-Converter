@@ -146,10 +146,10 @@ body{
     }
     .alphabets{
         margin: 6px;
-        padding-right: 7px;
-        padding-left: 7px;
+        padding-right: 4px;
+        padding-left: 4px;
         border-radius: 8px;
-        font-size: 9px;
+        font-size: 11px;
         margin-bottom: 30px;
     }
     .text-box{
